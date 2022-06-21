@@ -11,7 +11,7 @@ numbers.push(25);
 // numbers.push('shaun');
 // numbers[0] = 'shaun';
 
-let mixed = ['ken', 4, 'chun-li', 8, 9];
+let mixed = ['ken', 4, 'chun-li', 8, false]; // type: string, number, boolean
 
 mixed.push('ryu');
 mixed.push(10);
