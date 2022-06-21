@@ -1,19 +1,13 @@
-let character = 'mario';
-let age = 30;
-let isBlackBelt = false;
+// basic types (inferred) -> we can redeclar them with different types
+let character = 'mario'; 
+let age = 25;
+let savedPrincessFromDragon = false;
 
-// character = 20;
-character = 'luigi';
+console.log(character,' ', age, ' ', savedPrincessFromDragon);
 
-// age = 'yoshi';
-age = 40;
+const circ = ( diameter:number ) => { // diamaeter -> implicit ; diameter:number -> explicit type 
+    return diameter * Math.PI;
+}
 
-// isBlackBelt = 'yes';
-isBlackBelt = true;
-
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
-};
-
-// console.log(area('hello'));
-console.log(circ(7.5));
+//console.log(circ(character)); // error, we passed a string type instead of a number
+console.log(circ(6.5)); // error, we passed a string type instead of a number
