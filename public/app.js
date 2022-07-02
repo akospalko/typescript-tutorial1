@@ -7,7 +7,7 @@ var Invoice = /** @class */ (function () {
         this.amount = a;
     }
     Invoice.prototype.format = function () {
-        return this.client + " owes \u00A3" + this.amount + " for " + this.details;
+        return "".concat(this.client, " owes \u00A3").concat(this.amount, " for ").concat(this.details);
     };
     return Invoice;
 }());
